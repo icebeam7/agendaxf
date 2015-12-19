@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaXF.Pages.ViewContacts">
+  <ContentPage.Content>
+    <StackLayout Padding="5,20,10,0" >
+      <Label Text="Contacts" FontSize="40" HorizontalOptions="Center"/>
+      <Button x:Name="btnAdd" Text="Add new contact" Clicked="btnAdd_Clicked"/>
+      <ListView x:Name="lsvContacts">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <TextCell Text="{Binding Name}" Detail="{Binding TelephoneNumber}"/>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

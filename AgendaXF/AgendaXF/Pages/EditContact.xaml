@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaXF.Pages.EditContact">
+<ContentPage.Content>
+  <StackLayout>
+    <Entry Placeholder="Name" x:Name="txtName" WidthRequest="400" HorizontalOptions="Start"/>
+    <Entry Placeholder="TelephoneNumber" x:Name="txtTelephoneNumber" Keyboard="Telephone" WidthRequest="200" HorizontalOptions="Start"/>
+    <Label Text="Email"/>
+    <Entry x:Name="txtEmailAddress" Keyboard="Email" WidthRequest="400" HorizontalOptions="Start"/>
+    <Button x:Name="btnRegister" Text="Register contact" Clicked="btnRegister_Clicked"/>
+  </StackLayout>
+</ContentPage.Content>  
+</ContentPage>
